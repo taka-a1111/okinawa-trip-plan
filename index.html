@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沖縄 家族旅行プラン 2026.8.1〜8.8 | 高崎家</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ocean:#0a8ea0; --ocean-dark:#066b7a; --ocean-deep:#04404a;
+  --coral:#ff7a59; --coral-light:#ff9b80;
+  --sand:#fdf6ec; --sand-deep:#f3e7d3;
+  --sky:#e6f6f8; --sun:#ffc24b;
+  --text:#23363b; --text-mid:#5c6f74; --text-light:#90a0a4;
+  --white:#ffffff; --line:#e3eced;
+  --shadow:0 10px 30px rgba(4,64,74,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:var(--sand);line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.zen{font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* header */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;background:rgba(253,246,236,.82);backdrop-filter:blur(10px);transition:.3s;border-bottom:1px solid transparent}
+.site-header.scrolled{box-shadow:0 4px 20px rgba(4,64,74,.08);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--ocean-dark);font-size:1.02rem}
+.logo svg{width:26px;height:26px;color:var(--coral)}
+.nav{display:flex;gap:4px}
+.nav a{font-size:.82rem;font-weight:500;color:var(--text-mid);padding:7px 11px;border-radius:20px;transition:.2s}
+.nav a:hover{background:var(--ocean);color:#fff}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;color:var(--ocean-dark)}
+.menu-btn svg{width:28px;height:28px}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 22px 60px;position:relative;color:#fff;overflow:hidden;background:linear-gradient(160deg,#0a8ea0 0%,#066b7a 45%,#04404a 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(255,194,75,.25),transparent 45%),radial-gradient(circle at 85% 75%,rgba(255,122,89,.28),transparent 45%)}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;line-height:0}
+.hero-wave svg{width:100%;height:70px;display:block}
+.hero-inner{position:relative;z-index:2;max-width:760px}
+.hero .eyebrow{display:inline-block;letter-spacing:.22em;font-size:.78rem;font-weight:500;background:rgba(255,255,255,.16);padding:7px 18px;border-radius:30px;margin-bottom:22px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.3;margin-bottom:16px;text-shadow:0 4px 20px rgba(0,0,0,.18)}
+.hero h1 .accent{color:var(--sun)}
+.hero .dates{font-size:clamp(1rem,3vw,1.3rem);font-weight:500;opacity:.95}
+.hero .sub{margin-top:10px;font-size:.92rem;opacity:.8}
+.hero-stats{display:flex;gap:30px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+.hero-stats .st{text-align:center}
+.hero-stats .num{font-family:'Zen Maru Gothic';font-size:1.9rem;font-weight:700;color:var(--sun)}
+.hero-stats .lbl{font-size:.74rem;opacity:.85;letter-spacing:.05em}
+
+/* flight band */
+.flight{max-width:920px;margin:-30px auto 0;position:relative;z-index:5;padding:0 18px}
+.flight-card{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:22px 26px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.flight-card .ftitle{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ocean-dark);font-size:.95rem;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:2px}
+.flight-card .ftitle svg{width:20px;height:20px;color:var(--coral)}
+.fleg .dir{font-size:.74rem;color:var(--coral);font-weight:700;letter-spacing:.08em;margin-bottom:3px}
+.fleg .route{font-weight:500;font-size:.95rem}
+.fleg .time{font-size:.82rem;color:var(--text-mid);margin-top:2px}
+.fmeta{grid-column:1/-1;font-size:.78rem;color:var(--text-light);border-top:1px dashed var(--line);padding-top:10px;margin-top:2px}
+
+/* section wrap */
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.section-head{text-align:center;margin:70px 0 30px}
+.section-head .ja{font-size:1.7rem;font-weight:700;color:var(--ocean-dark)}
+.section-head .en{display:block;font-size:.74rem;letter-spacing:.2em;color:var(--coral);font-weight:500;margin-top:6px;text-transform:uppercase}
+
+/* overview map */
+.ovmap{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.ovmap iframe{width:100%;height:360px;border:0;display:block}
+
+/* day */
+.day{margin-top:30px;background:#fff;border-radius:20px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line)}
+.day-head{display:flex;align-items:center;gap:16px;padding:20px 24px;background:linear-gradient(100deg,var(--ocean),var(--ocean-dark));color:#fff;flex-wrap:wrap}
+.day-date{display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.16);border-radius:14px;min-width:64px;padding:8px 6px;line-height:1.1}
+.day-date .d{font-family:'Zen Maru Gothic';font-size:1.5rem;font-weight:700}
+.day-date .w{font-size:.72rem;margin-top:2px}
+.day-titles{flex:1;min-width:180px}
+.day-titles .area{font-size:1.2rem;font-weight:700;font-family:'Zen Maru Gothic'}
+.day-titles .theme{font-size:.82rem;opacity:.9;margin-top:2px}
+.day-tag{font-size:.72rem;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap}
+.tag-far{background:var(--coral);color:#fff}
+.tag-near{background:var(--sun);color:#5a3d00}
+.tag-nocar{background:#fff;color:var(--ocean-dark)}
+
+.day-body{padding:18px 22px 24px}
+.day-map{border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-bottom:18px}
+.day-map iframe{width:100%;height:240px;border:0;display:block}
+
+/* spot cards */
+.spots{display:grid;gap:12px}
+.spot{display:flex;gap:14px;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--sand);transition:.2s}
+.spot:hover{box-shadow:0 6px 18px rgba(4,64,74,.08);transform:translateY(-2px)}
+.spot-ic{flex-shrink:0;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--sky);color:var(--ocean-dark)}
+.spot-ic svg{width:23px;height:23px}
+.spot.eat .spot-ic{background:#fff0eb;color:var(--coral)}
+.spot-main{flex:1;min-width:0}
+.spot-name{font-weight:700;font-size:1.02rem;color:var(--text)}
+.spot-meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:6px;font-size:.8rem;color:var(--text-mid)}
+.spot-meta .hours{display:inline-flex;align-items:center;gap:5px}
+.spot-meta .hours svg{width:14px;height:14px;color:var(--ocean)}
+.badge{font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:20px}
+.b-open{background:#e7f6ec;color:#1f8a4c}
+.b-warn{background:#fff3e0;color:#c8731a}
+.b-res{background:#fdeaea;color:#c93b3b}
+.b-night{background:#ece9fb;color:#6a4bd6}
+.spot-links{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.spot-links a{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;font-weight:500;padding:6px 12px;border-radius:20px;border:1px solid var(--line);background:#fff;transition:.2s}
+.spot-links a:hover{background:var(--ocean);color:#fff;border-color:var(--ocean)}
+.spot-links a svg{width:14px;height:14px}
+.spot-note{font-size:.78rem;color:var(--text-light);margin-top:8px}
+
+.eatline{margin-top:14px;padding:12px 14px;background:#fff7f3;border:1px dashed var(--coral-light);border-radius:12px;font-size:.84rem;color:var(--text-mid)}
+.eatline strong{color:var(--coral);font-weight:700}
+
+/* notes */
+.notes{margin:60px 0 0;background:linear-gradient(120deg,#fff,var(--sand-deep));border-radius:20px;padding:28px 26px;border:1px solid var(--line)}
+.notes h3{color:var(--ocean-dark);font-size:1.1rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.notes h3 svg{width:22px;height:22px;color:var(--coral)}
+.notes ul{list-style:none;display:grid;gap:10px}
+.notes li{display:flex;gap:10px;font-size:.88rem;color:var(--text-mid)}
+.notes li::before{content:"";flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--coral);margin-top:9px}
+
+footer{text-align:center;padding:40px 20px 30px;margin-top:50px;color:var(--text-light);font-size:.8rem}
+footer .fl{font-family:'Zen Maru Gothic';font-weight:700;color:var(--ocean-dark);font-size:1rem;margin-bottom:6px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:768px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .nav.open{display:flex;position:absolute;top:100%;right:14px;flex-direction:column;background:#fff;padding:10px;border-radius:14px;box-shadow:var(--shadow);gap:2px}
+  .nav.open a{color:var(--text)}
+  .flight-card{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .spot{flex-direction:column}
+  .day-head{gap:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="hd">
+  <a href="#top" class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    沖縄プラン
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="メニュー"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+  <nav class="nav" id="nav">
+    <a href="#d1">8/1</a><a href="#d2">8/2</a><a href="#d3">8/3</a><a href="#d4">8/4</a>
+    <a href="#d5">8/5</a><a href="#d6">8/6</a><a href="#d7">8/7</a><a href="#d8">8/8</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <span class="eyebrow">OKINAWA FAMILY TRIP</span>
+    <h1>沖縄 7泊8日<br><span class="accent">家族</span >ドライブ旅</h1>
+    <p class="dates">2026年8月1日(土) 〜 8月8日(土)</p>
+    <p class="sub">大人2名・小児2名／那覇拠点・レンタカー（8/3〜）</p>
+    <div class="hero-stats">
+      <div class="st"><div class="num">8</div><div class="lbl">DAYS</div></div>
+      <div class="st"><div class="num">23</div><div class="lbl">SPOTS</div></div>
+      <div class="st"><div class="num">10</div><div class="lbl">GOURMET</div></div>
+    </div>
+  </div>
+  <div class="hero-wave"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#fdf6ec" d="M0,40 C240,75 480,5 720,30 C960,55 1200,15 1440,40 L1440,70 L0,70 Z"/></svg></div>
+</section>
+
+<div class="flight">
+  <div class="flight-card reveal">
+    <div class="ftitle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 19l1.5 2 1.5-2M2 10.5l2-1.5L2 7.5m20 3l-2-1.5 2-1.5M17.8 12.2 21 11l-8-2.5-2-7-1.5 1L9 8 3 9.5l3 2.2-1 4.3 3.5-2 5.3 2.7z"/></svg>
+      フライト情報（Peach／予約番号 HXJNHD）
+    </div>
+    <div class="fleg">
+      <div class="dir">往路 ▸ MM489</div>
+      <div class="route">名古屋(中部)第1T ／ 那覇</div>
+      <div class="time">8/1(土) 15:05発 ／ 17:25着</div>
+    </div>
+    <div class="fleg">
+      <div class="dir">復路 ▸ MM486</div>
+      <div class="route">那覇 ／ 名古屋(中部)第1T</div>
+      <div class="time">8/8(土) 11:55発 ／ 14:10着</div>
+    </div>
+    <div class="fmeta">国内線チェックイン締切は出発30分前（=11:25）。レンタカー返却10:00目安・空港10:15着で逆算。</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="section-head reveal">
+    <span class="ja">全体マップ</span>
+    <span class="en">Route Overview</span>
+  </div>
+  <div class="ovmap reveal">
+    <iframe loading="lazy" src="https://www.google.com/maps?q=26.5,127.85&z=9&output=embed" title="沖縄本島 全体マップ"></iframe>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day reveal" id="d1">
+    <div class="day-head">
+      <div class="day-date"><span class="d">1</span><span class="w">8/1 土</span></div>
+      <div class="day-titles"><div class="area">到着・那覇</div><div class="theme">夜は国際通りへ</div></div>
+      <span class="day-tag tag-nocar">車なし・モノレール</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.2146,127.6839&z=15&output=embed" title="国際通り"></iframe></div>
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">17:25 那覇空港 着 → モノレールで市内へ</div>
+            <div class="spot-meta"><span>荷物が多い初日はタクシー併用が楽</span></div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9M9 13h6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">国際通り</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>終日（店舗による）</span><span class="badge b-open">土曜OK</span></div>
+            <div class="spot-links"><a href="https://www.google.com/maps?q=26.2146,127.6839" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="eatline"><strong>夕食候補：</strong>しまぶた屋（17:00〜・夜のみ／<a href="https://www.google.com/maps?q=26.2172631,127.6810922" target="_blank" rel="noopener">地図</a>）　暖暮（〜翌2:00）　まぜ麺マホロバ</div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day reveal" id="d2">
+    <div class="day-head">
+      <div class="day-date"><span class="d">2</span><span class="w">8/2 日</span></div>
+      <div class="day-titles"><div class="area">那覇市内</div><div class="theme">ホテルチェックイン・モノレール観光</div></div>
+      <span class="day-tag tag-nocar">車なし・モノレール</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.2200,127.7050&z=13&output=embed" title="那覇市内"></iframe></div>
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-5h6v5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">首里城公園</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8:30–18:30</span><span class="badge b-open">日曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=13873795751300976523" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="https://oki-park.jp/shurijo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V11l8-6 8 6v10M4 11h16M9 21v-6h6v6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">おきみゅー（県立博物館・美術館）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>日 9:00–18:00</span><span class="badge b-open">日曜 営業</span><span class="badge b-warn">月曜 休館</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=6785339530844620063" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="http://okimu.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9M9 13h6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">国際通り（買い物・昼食）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>終日</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="eatline"><strong>食事候補：</strong>牛かつもと村 国際通り本店（11:00–22:00／<a href="https://maps.google.com/?cid=3999501180578069871" target="_blank" rel="noopener">地図</a>）　ジェフ サンライズ那覇店（ゴーヤーバーガー・朝食可）</div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day reveal" id="d3">
+    <div class="day-head">
+      <div class="day-date"><span class="d">3</span><span class="w">8/3 月</span></div>
+      <div class="day-titles"><div class="area">中部・うるま／沖縄市／北谷</div><div class="theme">レンタカー開始・子どもデー</div></div>
+      <span class="day-tag tag-near">近め</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.327,127.81&z=12&output=embed" title="中部エリア"></iframe></div>
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13M4 12h16M8 21v-5h8v5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">勝連城跡（世界遺産）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9:00–18:00</span><span class="badge b-open">月曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=2200640597983307198" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="http://www.katsuren-jo.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14a4 4 0 118 0M5 9a3 3 0 100-1M19 9a3 3 0 110-1M3 20c0-3 3-5 6-5m6 0c3 0 6 2 6 5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">沖縄こどもの国</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>月 9:30–17:30</span><span class="badge b-open">月曜 営業</span><span class="badge b-warn">火曜 休園</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=10080345681313787403" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="https://www.okzm.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+            <div class="spot-note">動物園＋ワンダーミュージアム。子連れにおすすめ（2〜2.5時間）</div>
+          </div>
+        </div>
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8a3 3 0 006 0V3M8 3v18M16 3c-1.5 1-2 3-2 5s.5 4 2 5v8"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">浜屋（沖縄そば・昼食）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–17:30</span><span class="badge b-open">月曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=12045287017928494962" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://hamayasoba.gorp.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">アメリカンヴィレッジ</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–22:00</span><span class="badge b-open">月曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=2008179420793048012" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="http://www.okinawa-americanvillage.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day reveal" id="d4">
+    <div class="day-head">
+      <div class="day-date"><span class="d">4</span><span class="w">8/4 火</span></div>
+      <div class="day-titles"><div class="area">北部・本部（美ら海）</div><div class="theme">朝7:30〜8:00発の遠出</div></div>
+      <span class="day-tag tag-far">遠出</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.694,127.878&z=11&output=embed" title="本部エリア"></iframe></div>
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-4 7-6 11-6 5 0 9 3 9 6s-4 6-9 6c-2 0-4-.5-6-1.5L2 18l1.5-4"/><circle cx="15" cy="11" r="1"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">美ら海水族館</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8:30–18:30</span><span class="badge b-open">火曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=16863911804921552894" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="https://churaumi.okinawa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+            <div class="spot-note">8:30開館を狙う。子連れの目玉</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 5 5 .5-4 3.5 1.5 5L12 19l-4.5 -2 1.5-5-4-3.5 5-.5z"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">海洋博公園（無料イルカショー）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8:00–18:00</span><span class="badge b-open">火曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=11049968752631791556" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="http://oki-park.jp/kaiyohaku/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8M12 8c0-3 2-5 5-5-1 3-2 5-5 5zm0 0c0-3-2-5-5-5 1 3 2 5 5 5z"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">備瀬のフクギ並木</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>24時間</span><span class="badge b-open">いつでも</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=11784430391842216502" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a></div>
+            <div class="spot-note">並木道を散策。昼食も本部そばなどこの辺りで</div>
+          </div>
+        </div>
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9 12a3 3 0 006 0M9 9h.01M15 9h.01"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">大宜味シークヮーサーパーク</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>火 10:00–17:30</span><span class="badge b-open">火曜 営業</span></div>
+            <div class="spot-links">
+              <a href="https://maps.google.com/?cid=6457650603352275287" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a>
+              <a href="https://www.shikuwasa-park.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a>
+            </div>
+            <div class="spot-note">美ら海よりさらに北東。疲れたら省略可</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day reveal" id="d5">
+    <div class="day-head">
+      <div class="day-date"><span class="d">5</span><span class="w">8/5 水</span></div>
+      <div class="day-titles"><div class="area">南部・南城</div><div class="theme">遠出の翌日は近場で</div></div>
+      <span class="day-tag tag-near">近め</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.13,127.74&z=12&output=embed" title="南部エリア"></iframe></div>
+      <div class="spots">
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 19c0-4 2-7 6-7s6 3 6 7M12 8V5M9 5h6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">浜辺の茶屋（朝食・海カフェ）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8:00–17:00</span><span class="badge b-open">水曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=13933470595957617327" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://sachibaru.jp/hamacha/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M12 6V3M9 3h6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">大城てんぷら店</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>水 10:30–17:45</span><span class="badge b-open">水曜 営業</span><span class="badge b-warn">月・火 休</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=5765919119938894353" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a></div>
+            <div class="spot-note">1個約120円。浜辺の茶屋の隣で食べ歩き</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v10h14V10M9 20v-6h6v6"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">おきなわワールド（玉泉洞）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9:00–17:30</span><span class="badge b-open">水曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=18363440050121383371" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://www.gyokusendo.co.jp/okinawaworld/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c2-6 6-9 8-9s6 3 8 9M8 11a4 4 0 018 0"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">ガンガラーの谷</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ツアー 9:00–16:00</span><span class="badge b-res">要予約</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=779342391328326614" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://gangala.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+            <div class="spot-note">完全予約制ガイドツアー（約80分）。事前に時間枠を予約</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">ひめゆりの塔・平和祈念</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>常時（資料館9:00–17:25）</span><span class="badge b-open">いつでも</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=16546443376487506894" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="http://www.himeyuri.or.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day reveal" id="d6">
+    <div class="day-head">
+      <div class="day-date"><span class="d">6</span><span class="w">8/6 木</span></div>
+      <div class="day-titles"><div class="area">北部・名護</div><div class="theme">テーマパークめぐり</div></div>
+      <span class="day-tag tag-far">遠出</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.61,127.97&z=11&output=embed" title="名護エリア"></iframe></div>
+      <div class="spots">
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16l-2 7H6zM6 13a6 6 0 0112 0"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">キングタコス金武本店（昼食）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:30–21:00</span><span class="badge b-open">木曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=6393001004168737312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a></div>
+            <div class="spot-note">タコライス発祥。北部への通り道</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 01-8 0M5 21c0-4 3-7 7-7s7 3 7 7M9 7c0-2 1-4 3-4s3 2 3 4"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">ネオパーク沖縄</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9:30–17:30</span><span class="badge b-open">木曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=11015535798775215467" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://www.neopark.co.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+            <div class="spot-note">鳥と触れ合える動植物園。子連れ向き</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9M12 9c-1-3-4-4-4-4s0 3 4 4zm0 0c1-3 4-4 4-4s0 3-4 4zM7 13c2 0 5 4 5 9 0-5 3-9 5-9"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">ナゴパイナップルパーク</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–18:00</span><span class="badge b-open">木曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=16449617930949920362" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://www.nagopine.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="6"/><path d="M12 7c-1-2-3-3-3-3M12 7c1-2 3-3 3-3"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">OKINAWAフルーツらんど</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–18:00</span><span class="badge b-open">木曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=13925039225106660076" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="http://www.okinawa-fruitsland.jp/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+          </div>
+        </div>
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 11v9h14v-9M9 20v-5h6v5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">百年古家 大家 うふやー（夕食）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>11:00–15:30／17:30–21:00</span><span class="badge b-open">木曜 営業</span><span class="badge b-res">予約推奨</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=7806570637372482677" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://ufuya.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+            <div class="spot-note">古民家でアグー豚しゃぶ。中休み15:30–17:30。到着17:30が夜営業開始でちょうど良い</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day reveal" id="d7">
+    <div class="day-head">
+      <div class="day-date"><span class="d">7</span><span class="w">8/7 金</span></div>
+      <div class="day-titles"><div class="area">豊見城・空港エリア</div><div class="theme">最終日はゆったり・夕日</div></div>
+      <span class="day-tag tag-near">近め</span>
+    </div>
+    <div class="day-body">
+      <div class="day-map"><iframe loading="lazy" src="https://www.google.com/maps?q=26.17,127.65&z=13&output=embed" title="豊見城エリア"></iframe></div>
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">午前：ビーチ or ホテルでのんびり</div>
+            <div class="spot-meta"><span>お子さまの休憩日。無理せず</span></div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18c0-4 3-7 7-7s7 3 7 7M12 4v3M12 11a5 5 0 00-5 5"/><circle cx="12" cy="6" r="2"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">瀬長島ウミカジテラス</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–20:00</span><span class="badge b-open">金曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=11904711692991169464" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://www.umikajiterrace.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+            <div class="spot-note">飛行機を眺めながら夕日。空港すぐ近く</div>
+          </div>
+        </div>
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2l1 5h10l1-5M5 7h14l-1 13H6zM9 11v5M15 11v5"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">沖縄アウトレットモール あしびなー</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10:00–20:00</span><span class="badge b-open">金曜 営業</span></div>
+            <div class="spot-links"><a href="https://maps.google.com/?cid=15357081985715617318" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>地図</a><a href="https://www.ashibinaa.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>公式</a></div>
+            <div class="spot-note">最後の買い物。空港近く</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day reveal" id="d8">
+    <div class="day-head">
+      <div class="day-date"><span class="d">8</span><span class="w">8/8 土</span></div>
+      <div class="day-titles"><div class="area">出発</div><div class="theme">レンタカー返却 → 空港</div></div>
+      <span class="day-tag tag-nocar">移動日</span>
+    </div>
+    <div class="day-body">
+      <div class="spots">
+        <div class="spot">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5a2 2 0 012-1h10a2 2 0 012 1l2 5M5 13h14v5H5zM7 18v2M17 18v2"/><circle cx="7.5" cy="15.5" r="1"/><circle cx="16.5" cy="15.5" r="1"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">9:30 ホテル発 → レンタカー返却（10:00目安）</div>
+            <div class="spot-meta"><span>搭乗1時間前に営業所着で逆算</span></div>
+          </div>
+        </div>
+        <div class="spot eat">
+          <div class="spot-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-3 7-4 10-4s7 1 10 4M10 21l2-9 2 9M7 8V4l5 4 5-4v4"/></svg></div>
+          <div class="spot-main">
+            <div class="spot-name">那覇空港 → 11:55 発（MM486）</div>
+            <div class="spot-meta"><span class="hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>チェックイン締切 11:25</span><span class="badge b-warn">出発30分前</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div class="notes reveal">
+    <h3>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+      旅行前の確認メモ
+    </h3>
+    <ul>
+      <li><strong style="color:#c93b3b">8/1(土)の宿が未手配</strong>です（ホテルは8/2から6泊のため）。国際通り周辺などモノレール圏で1泊押さえてください。</li>
+      <li><strong>ガンガラーの谷</strong>は完全予約制。<strong>百年古家 大家 うふやー</strong>も予約推奨。早めの手配を。</li>
+      <li>北部（美ら海・名護）は片道1.5〜2時間。8/4・8/6は朝発がおすすめ。</li>
+      <li>定休日に注意：おきみゅー（月休）・大城てんぷら（月火休）・こどもの国（火休）。本プランは全て営業日に配置済み。</li>
+      <li>営業時間はGoogleマップ参考値。定休日・季節営業は変わるため、最終確認を推奨します。</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <div class="fl">沖縄 家族旅行プラン</div>
+  2026.8.1(土) – 8.8(土)　大人2・小児2／那覇拠点・レンタカー旅<br>
+  <span style="font-size:.72rem;color:#b3c0c2">※デモサイト。地図・営業時間はGoogleマップの参考情報です。</span>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>30));
+const mb=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+mb.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));
+</script>
+</body>
+</html>
